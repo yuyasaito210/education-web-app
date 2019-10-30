@@ -1,0 +1,14 @@
+__pycache__/
+.tox/
+build/
+media/
+node_modules/
+static_collected/
+.DS_Store
+.env
+*.sqlite3
+build.tar.bz2
+npm-debug.log
+.idea
+.vagrant
+djnci.sql.gz

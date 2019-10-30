@@ -1,0 +1,16 @@
+{% extends "base_email.html" %}
+
+{% block title %}Field Trip Request{% endblock title %}
+
+{% block body %}
+
+  <p>We are excited and looking forward to speaking with you!</p>
+
+  <p>This email is to confirm that you or another teacher from {{ school.name }} has requested a field trip booking.</p>
+
+  <p>As soon as we can, you'll be contacted over {{ contact_method }} during regular business hours to work out the details.</p>
+
+  <p>Talk soon,
+    <br/>Nature's Classroom Institute</p>
+
+{% endblock body %}

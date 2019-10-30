@@ -1,0 +1,673 @@
+// out: ./style.css, sourcemap: false, compress: true
+
+@media (max-width: 767px) {
+.nciapp {
+    background-attachment: initial;
+  }
+}
+
+.nciapp {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: url(/app-bg.jpg);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: rgba(17, 17, 17, 0.91);
+    z-index: 1000;
+
+    img {
+      float: left;
+      margin: 10px 0 0 15px;
+      width: 80px;
+    }
+    p {
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+    .company-name {
+      position: relative;
+      left: 5px;
+      padding: 10px 0 0 0;
+      margin: 0;
+      font-size: 1.2em;
+      color: #c9c9c9;
+    }
+    .current-location {
+      position: relative;
+      margin: 0;
+      line-height: 1em;
+      left: 15px;
+      color: #fff;
+      font-size: 2em;
+      .fa {
+        position: relative;
+        font-size: 0.73em;
+        color: #9c9c9c;
+      }
+    }
+    .account-menu {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #989898;
+      font-size: 1.4em;
+    }
+  }
+
+  .body-content {
+    padding-top: 90px;
+
+    .section-header {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1em;
+      text-shadow: 0 1px 1px black;
+      margin-top: 10px;
+      margin-left: 15px;
+      font-family: sans-serif;
+    }
+
+    .next-up {
+      position: relative;
+      margin: 0px 15px 15px 15px;
+      padding: 8px 0 0 0;
+      border-radius: 8px;
+      min-height: 150px;
+      background: #ebebeb;
+      .notes {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        font-size: 1.2em;
+      }
+      .fieldtrip-name {
+        margin-left: 20px;
+        font-size: 1em;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+
+      }
+      .school-list {
+        margin: 0 0 8px 0;
+        padding-left: 35px;
+      }
+      .main-buttons {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        li {
+          border-right: 1px solid #cbcbcb;
+          margin: auto;
+          display: inline-block;
+          text-align: center;
+          font-size: 1.1em;
+          width: 33%;
+          font-weight: 500;
+          &:last-child {
+            border-right: none;
+          }
+          a {
+            display: inline-block;
+            padding: 9px 0;
+          }
+        }
+      }
+    }
+
+    .fieldtrip-list-scroller-wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      >div {
+        white-space: nowrap;
+        margin-bottom: 10px;
+      }
+      .fieldtrip-name {
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 1em;
+        color: white;
+      }
+      .fieldtrip-panel, .fieldtrip-panel-add {
+        position: relative;
+        vertical-align: top;
+        color: #b9b9b9;
+        padding: 5px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background: rgba(17, 17, 17, 0.91);
+        border-radius: 8px;
+        margin: 0 5px 0 8px;
+        width: 220px;
+        height: 135px;
+        .school-list {
+          margin: 3px 0 0 0;
+          padding-left: 8px;
+          font-size: 0.83em;
+          li {
+            overflow: hidden;
+            width: 223px;
+            padding-bottom: 2px;
+            text-overflow: ellipsis;
+            color: #8c8c8c;
+          }
+        }
+        .head-count {
+          display: block;
+          position: absolute;
+          bottom: 5px;
+          margin-top: 3px;
+          margin-left: 5px;
+          font-weight: bold;
+        }
+        .date {
+          display: block;
+          position: absolute;
+          bottom: 5px;
+          right: 10px;
+          color: #666666;
+        }
+      }
+      .fieldtrip-panel-add {
+        font-size: 1em;
+        text-align: center;
+        span {
+          padding-top: 54px;
+          position: relative;
+        }
+      }
+    }
+
+    .app-mainmenu {
+      width: 100%;
+      margin-bottom: 25px;
+      ul {
+        list-style-type: none;
+        margin: 0 15px;
+        padding: 0;
+        li {
+          display: inline-flex;
+          width: 25%;
+          text-align: center;
+          &:last-child {
+            a {
+              margin-right: 0;
+            }
+          }
+        }
+        a {
+          color: #464646;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          padding: 13px;
+          background: rgba(255,255,255,0.9);
+          height: 75px;
+          width: 100%;
+          border-radius: 8px;
+          font-size: 0.9em;
+          &:focus, &:hover, &:active {
+            text-decoration: none;
+          }
+        }
+        .fa {
+          margin: auto;
+          display: block;
+          margin-bottom: 5px;
+          font-size: 2.4em;
+        }
+      }
+    }
+  }
+}
+
+.big-counts {
+  margin: 0 0 0 0;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    color: #707070;
+    &:nth-child(1) { span { color: #a948a3; } }
+    &:nth-child(2) { span { color: #7aab37; } }
+    &:nth-child(3) { span { color: #c4783f; } }
+    &:nth-child(4) { span { color: #5cafab; } }
+    span {
+      font-size: 3.1em;
+      line-height: 0.95em;
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+}
+
+.header-font {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif ;
+}
+
+.nciapp-fieldtrip-detail {
+  width: 100%;
+  display: block;
+  position: relative;
+  a, a:hover {
+    text-decoration: none;
+  }
+  .nci-navbar-header {
+    padding: 0 10px;
+    background: #2C2D2D;
+    color: #B2B2B2;
+    width: 100%;
+    height: 50px;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    .nci-navbar-header-back {
+      width: 85px;
+      font-size: 1.2em;
+
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      .header-font();
+      a {
+        color: #b2b2b2;
+      }
+    }
+    .nci-navbar-header-title {
+      text-align: center;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      h2 {
+        .header-font();
+        font-size: 1.5em;
+        margin: 0;
+        color: #ececec;
+      }
+      p {
+        .header-font();
+        margin: 0;
+        font-size: 0.88em;
+        color: #b2b2b2;
+      }
+    }
+    .nci-navbar-header-share {
+      font-size: 1.4em;
+      text-align: right;
+      width: 85px;
+      .header-font();
+
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      a {
+        color: #b2b2b2;
+      }
+    }
+  }
+  .search-box {
+    position: relative;
+    background: #E8E8E8;
+    border-bottom: 1px solid #CBCBCB;
+    padding: 10px 10px;
+    .fa {
+      top: 19px;
+      left: 20px;
+      color: #989898;
+      position: absolute;
+    }
+    input {
+      width: 100%;
+      padding-left: 30px;
+      border-radius: 8px;
+    }
+  }
+
+  .fieldtrip-name-list-item {
+    padding: 8px 10px;
+    font-weight: bold;
+    .pull-right a {
+      margin-right: 10px;
+    }
+  }
+
+  .fieldtrip-hud {
+    background: #fefefe;
+background: -moz-linear-gradient(top, #fefefe 0%, #ededed 100%);
+background: -webkit-linear-gradient(top, #fefefe 0%,#ededed 100%);
+background: linear-gradient(to bottom, #fefefe 0%,#ededed 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#ededed',GradientType=0 );
+    .big-counts {
+      background: #fefefe;
+      background: -moz-linear-gradient(top, #fefefe 0%, #ededed 100%);
+      background: -webkit-linear-gradient(top, #fefefe 0%,#ededed 100%);
+      background: linear-gradient(to bottom, #fefefe 0%,#ededed 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#ededed',GradientType=0 );
+
+    }
+  }
+
+  .fieldtrip-menu-bar {
+    padding: 15px 5px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 33%;
+        padding: 0 5px;
+        display: inline-block;
+        text-align: center;
+      }
+      a {
+        font-weight: bold;
+        display: block;
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #377BB5;
+
+      }
+    }
+  }
+
+  .student-list-by-school {
+    width: 100%;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #E5E5E5;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    li.header {
+      background: #42B57D;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+    }
+    li span.header-badge {
+      border-radius: 4px;
+      color: white;
+      padding: 5px 7px;
+      font-size: 0.89em;
+      background: #31835A;
+      text-align: center;
+      .fa {
+        font-size: 0.79em;
+        margin-right: 2px;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+
+  .student-list-med-log {
+    width: 100%;
+    > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      > li {
+        margin: 3px;
+        padding: 10px;
+        border-bottom: 1px solid #E5E5E5;
+        &:fird-child {
+          margin-top: 20px;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+// React Big   Calendar
+.rbc-month-view {
+  height: 360px !important;
+  display: -webkit-box !important;
+  dispaly: block;
+  // display: block !important;
+}
+
+
+
+
+
+.student-note {
+  list-style-type: none;
+  margin: 0 10px 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #dad5be;
+  background: #FFFBE1
+}
+
+
+
+.student-profile-header {
+  padding: 20px 10px 10px 20px;
+  h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    font-family: Helvetica;
+  }
+  .profile-photo-fa {
+    position: relative;
+    top: -10px;
+    float: right;
+    margin-top: 0;
+    padding: 0;
+    margin-left: 10px;
+    font-size: 3.5em;
+    color: #aaaaaa;
+  }
+}
+
+
+.outline-btn {
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: none;
+  font-weight: bold;
+  border: 1px solid #3F7FB3;
+  color: #3F7FB3;
+}
+
+.display-list-header {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px;
+  background: #3F7FB3;
+  color: white;
+}
+.display-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    font-size: 1.1em;
+    padding: 8px 20px 8px 15px;
+    border-bottom: 1px solid #E6E6E6;
+    color: #5b5b5b;
+    &:last-child {
+      margin-bottom: 10px;
+      border-bottom: none;
+    }
+    .pull-right {
+      color: #5b5b5b;
+    }
+  }
+
+  .med-meta {
+    color: #717171;
+  }
+
+  .med-amount {
+    display: block;
+    font-size: 0.88em;
+  }
+  .med-admin-times {
+    display: block;
+  }
+}
+
+
+.non-rx-notes, .med-notes {
+  display: block;
+  margin-top: 5px;
+  padding: 10px;
+  background: #feffed;
+  border-left: 3px solid #bdb172;
+}
+.allergies-expanded {
+  font-size: 0.9em;
+  color: #be5d5d;
+}
+
+
+.allergy-list {
+  display: block;
+  margin: 15px 0;
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ff8e8e;
+  border-radius: 10px;
+  li {
+    font-size: 0.95em;
+    padding: 8px;
+    margin: 0;
+    border-color: #ffd5d5;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+.date-line, .sig-line, .phone-line, .email-line, .sig-line, .waiver-header {
+  font-family: sans-serif;
+  color: black;
+  padding: 0 25px 5px 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.waiver-header {
+  display: inline-block;
+}
+.waiver-ol {
+  li {
+    margin: 10px 0;
+  }
+}
+.waiver-footer {
+  font-family: sans-serif;
+  p {
+    line-height: 2em;
+  }
+}
+
+
+.medTableBg {
+  .medTableBgCell { background: #f1f1f1; }
+  .medTableBgPar {
+    position: relative;
+    // table-layout: fixed;
+    td {
+      // position: sticky;
+      // top: 85px;
+      background: #ffffff;
+    }
+  }
+  &:hover {
+    background: #fffde5;
+    .medTableBgCell { background: #fffde5; }
+    .medTableBgPar td {
+      background: #fffde5;
+    }
+  }
+}
+
+.sticky-header {
+  position: relative;
+  top: 50px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  > thead th {
+    top: 50px;
+    position: sticky;
+    background: #dddddd;
+  }
+}

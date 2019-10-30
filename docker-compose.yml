@@ -1,0 +1,29 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    env_file: .env
+    #command: mysqld --default-authentication-plugin=mysql_native_password
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+    restart: always
+    ports:
+      - '3306:3306'
+    volumes:
+    - ./djnci.sql.gz:/docker-entrypoint-initdb.d/djnci.sql.gz
+  web:
+    build: .
+    env_file: .env
+    command: bash -c 'python manage.py runserver 0.0.0.0:9000'
+    volumes:
+      - .:/djnci
+    ports:
+      - '9000:9000'
+    depends_on:
+      - db
+  phpmyadmin:
+    env_file: .env
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db:db
+    ports:
+      - 8000:80

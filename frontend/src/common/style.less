@@ -1,0 +1,719 @@
+// out: ./style.css, sourcemap: false, compress: true
+
+.volunteer-date {
+  display: inline-grid;
+  padding-right: 20px;
+  width: 120px;
+}
+.volunteer-description {
+  display: inline-grid;
+  width: ~"calc(100% - 220px)";
+}
+.volunteer-hours {
+  display: inline-grid;
+  width: 100px;
+}
+
+.panel-link-list {
+  ul {
+    margin-top: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding: 4px 0;
+      &.divider {
+        margin: 8px 0;
+        border-top: 1px solid #e8e8e8;
+      }
+    }
+  }
+}
+
+.room-assignment .form-control {
+  height: 27px;
+}
+
+.btn-nostyle {
+  background: none;
+  border: none;
+}
+
+// .form-group.field {
+//   div, label.control-label, input {
+//    display: inline-block;
+//   }
+//   input {
+//     margin-left: 10px;
+//     width: 230px;
+//   }
+// }
+//
+// .form-group {
+//   text-align: right;
+// }
+// .form-group.field-string {
+//   margin-bottom: 5px;
+// }
+// .form-wrapper .form-group .form-group {
+//   legend {
+//     background: #d1d1d1;
+//     padding: 10px;
+//     border-radius: 4px;
+//   }
+//   .form-group {
+//     legend {
+//       background: #ededed;
+//       padding: 0 10px;
+//       border-radius: 4px;
+//       font-size: 1.4em;
+//     }
+//   }
+// }
+
+.n {
+  font-family: 'Helvetica Nueue', Helvetica, verdana, arial, sans-serif;
+  font-size: 1em !important;
+}
+
+.spaced-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 3px 0;
+  }
+}
+
+.post-in-list {
+  font-family: lato, Helvetica, sans-serif !important;
+  font-size: 1em;
+  h3 {
+    margin-bottom: 5px;
+  }
+  .dateline {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    color: #6a6a6a;
+  }
+  p, ul {
+    line-height: 1.6em;
+    font-family: lato, Helvetica, sans-serif !important;
+    font-size: 1em !important;
+  }
+}
+
+
+
+/* NCI App ****************************************************************** */
+
+.teacher-register-wrapper {
+  .form-group {
+    text-align: left;
+  }
+  .form-group.field {
+    div, label.control-label, input {
+     display: block;
+    }
+    input {
+      width: 280px;
+    }
+  }
+}
+
+.teacher-register-btn {
+  display: block;
+  text-align: center;
+  margin: 0 0 20px 0;
+  border-radius: 4px;
+  padding: 10px 22px;
+  font-size: 1.3em;
+  background: #377bb5;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background: #3271a7;
+  }
+  .subline {
+    color: #c0d5e7;
+  }
+}
+
+.nci-login-btn {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0 15px 22px;
+  font-size: 1.3em;
+  .subline {
+    color: #8b8b8b;
+  }
+}
+
+.teacher-register-btn, .nci-login-btn {
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+  .subline {
+    font-size: 0.75em;
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+.teacher-fieldtrip-list {
+  margin: 20px 0 0 0;
+  .list-item {
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .gist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-right: 10px;
+      background: #f2f2f2;
+      border-radius: 15px;
+      padding: 2px 10px;
+      display: inline-flex;
+      font-size: 0.9em;
+    }
+  }
+}
+
+
+
+
+
+.modal-body .form-group {
+  margin-bottom: 15px;
+}
+.modal-body .form-group .lead {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tab-content {
+  width: 95%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+.modal-body {
+  padding-top: 10px;
+  .dropdown-menu {
+    background: white;
+    padding: 10px;
+    position: absolute;
+    li > a {
+      color: #377BB5;
+      &:hover {
+        background: #f2f2f2;
+        color: #1c4d78;
+      }
+      &.active {
+        color: white;
+        &:hover {
+          color: #377BB5;
+        }
+      }
+    }
+  }
+}
+
+
+.nav-tabs li {
+  padding-left: 3px;
+  padding-right: 3px;
+  a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+
+.close-medication-form {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  float: right;
+  padding: 5px;
+  color: #a2a2a2;
+  border: none;
+  background: none;
+}
+
+
+.filterable-table-container {
+  .filter-container {
+    display: block;
+    position: relative;
+  }
+  .fa-sort, .fa-sort-asc, .fa-sort-desc {
+    position: relative;
+    left: 5px;
+  }
+  .close {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+  }
+}
+
+.label-default {
+  background: none;
+  border: 1px solid #919191;
+  color: #585858;
+}
+.label-success {
+  background: none;
+  border: 1px solid #24dd6e;
+  color: #07b64d;
+}
+
+
+
+
+/* react-birthdate-field *************************************************** */
+
+.rdf-wrapper {
+  .rdf-input-month, .rdf-input-day, .rdf-input-year {
+    margin-right: 10px;
+    padding: 4px;
+    font-size: 1.1em;
+    border: 1px solid #cccccc;
+    &:disabled {
+      opacity: 0.6;
+    }
+  }
+  .rdf-input-day, .rdf-input-year {
+    border-radius: 4px;
+  }
+  .rdf-input-month {
+    width: 120px;
+    height: 31px;
+    background: #fff;
+  }
+  .rdf-input-day {
+    width: 55px;
+  }
+  .rdf-input-year {
+    width: 65px;
+  }
+  .rdf-btn-clear {
+    background: none;
+    border: none;
+    color: #2d75cb;
+  }
+  .rdf-age-display {
+    display: block;
+    margin: 5px 0 0 3px;
+    color: #747474;
+  }
+}
+
+
+
+
+
+
+
+
+
+.student-fieldtrip-register-table {
+  background: none;
+  width: 100%;
+  tr {
+    border: none;
+  }
+  td {
+    padding: 5px 0;
+  }
+}
+
+
+
+
+.forms-extras {
+  .dropdown-menu {
+    background: #f4f4f4;
+    padding: 10px;
+    position: absolute;
+    li > a {
+      color: #377BB5;
+      &:hover {
+        background: #f2f2f2;
+        color: #1c4d78;
+      }
+      &.active {
+        color: white;
+        &:hover {
+          color: #377BB5;
+        }
+      }
+    }
+  }
+}
+
+
+
+.rangeslider-horizontal {
+  height: 6px !important;
+  .rangeslider__fill {
+    background: orange !important;
+  }
+  .rangeslider__handle {
+    width: 20px !important;
+    height: 20px !important;
+    &:after {
+      width: 12px !important;
+      height: 12px !important;
+      top: 3px !important;
+      left: 3px !important;
+    }
+  }
+}
+
+
+.sans-block {
+  p, ul, ol {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: helvetica, sans-serif;
+  }
+}
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.newrow {
+  p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    font-family: Helvetica, sans-serif;
+  }
+  .dropdown-menu {
+    background: white;
+    padding: 10px;
+    position: absolute;
+    li > a {
+      color: #377BB5;
+      &:hover {
+        background: #f2f2f2;
+        color: #1c4d78;
+      }
+      &.active {
+        color: white;
+        &:hover {
+          color: #377BB5;
+        }
+      }
+    }
+  }
+}
+
+
+.caplabel {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+
+
+.form-step {
+  position: relative;
+  min-height: 100px;
+  margin: 0;
+  padding: 0;
+  .btn-form-step-prev {
+   float: left;
+  }
+  .btn-form-step-next {
+    float: right
+  }
+  .step-footer {
+    margin-top: 20px;
+    height: 40px;
+    .btn-success {
+      font-size: 1.2em;
+      padding: 8px 30px;
+    }
+    .mute {
+      padding: 0 20px;
+      font-size: 1.1em;
+      padding-top: 8px;
+      color: #8c8c8c;
+    }
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.review-table {
+  tr.table-row-header {
+    background-color: #e9e9e9;
+  }
+  th {
+    padding: 5px;
+  }
+  td {
+    padding: 1px 5px;
+  }
+}
+
+
+.close-btn {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  color: #808080;
+  font-size: 1.2em;
+  z-index: 9999;
+}
+
+.step-bar {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    width: calc(100% / 5);
+    flex-basis: auto;
+    padding: 3px;
+    margin-right: 0px;
+    display: inline-block;
+    color: #afafaf;
+    border-bottom: 3px solid #e4e4e4;
+    &.active {
+      color: black;
+      border-color: green;
+    }
+  }
+}
+
+.student-form-review {
+  th {
+    background: #e4e4e4;
+  }
+  td {
+    padding-left: 20px !important;
+  }
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.parent-child-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  > li {
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 165px;
+    vertical-align: top;
+    height: 240px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+      li {
+        padding: 0;
+        line-height: 1.4em;
+        font-size: 0.8em;
+      }
+    }
+    .avatar {
+      margin-top: 0px;
+      font-size: 3em;
+      color: #e2e2e2;
+      display: block;
+    }
+    .name {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+      display: block;
+    }
+    .subline {
+      display: block;
+    }
+    .foot {
+      position: absolute;
+      display: block;
+      bottom: 10px;
+      left: 10px;
+      .school {
+        display: block;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// Insurance table...
+.wide-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  > li {
+    position: relative;
+    margin-bottom: 5px;
+    border-top: 1px solid #e3e3e3;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding: 13px 0;
+  }
+  ul {
+    margin-left: 4px;
+  }
+}
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+
+  // Let the modal cover the screen entirely
+  .modal-dialog {
+    margin: 10px auto;
+  }
+
+  .form-step {
+    padding: 10px 25px;
+  }
+
+  .step-bar {
+    margin-top: 25px;
+    font-size: 1.15em;
+  }
+
+
+  .parent-child-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    > li {
+      position: relative;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      display: inline-block;
+      width: 220px;
+      vertical-align: top;
+      height: 280px;
+      border-radius: 10px;
+      padding: 13px;
+
+      border: 1px solid #e3e3e3;
+      transition: box-shadow 100ms;
+
+      -webkit-box-shadow: 0px 10px 46px -9px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 10px 46px -9px rgba(0,0,0,0.2);
+      box-shadow: 0px 10px 46px -9px rgba(0,0,0,0.2);
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+        li {
+          padding: 0;
+          line-height: 1.4em;
+          font-size: 0.8em;
+        }
+      }
+      .avatar {
+        margin-top: 5px;
+        font-size: 4em;
+        color: #e2e2e2;
+        display: block;
+      }
+      .name {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+      }
+      .subline {
+        font-size: 0.9em;
+        display: block;
+      }
+      .foot {
+        position: absolute;
+        display: block;
+        bottom: 10px;
+        left: 10px;
+        .school {
+          display: block;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width : 992px) {}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+.btn-default {
+  color: #3D7DB4;
+}
+
+
+.btn-link-delete {
+  color: #cccccc;
+  &:hover {
+    color: #d43939;
+    text-decoration: none;
+  }
+}

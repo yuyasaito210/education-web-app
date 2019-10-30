@@ -1,0 +1,23 @@
+{% extends "base_email.html" %}
+
+{% block title %}Welcome to Nature's Classroom Institute{% endblock title %}
+
+{% block body %}
+
+  <p>You've successfully signed up as a {{ account.account_type }} on discovernci.org.</p>
+
+  <ul>
+    <li>Name: <strong>{{ account.name }}</strong></li>
+    <li>Account Type: <strong>{{ account.account_type|capfirst }}</strong> {% if not account.is_active %}<i>Pending Approval</i>{% endif %}</li>
+    <li>School: <strong>{{ school.name }}</strong>{% if school.phone %} ({{ school.phone }}){% endif %}</li>
+    <li>Date Joined: <strong>{{ account.date_joined }}</strong></li>
+  </ul>
+
+  {% if account.account_type == 'teacher' and not account.is_active %}
+    <p>NOTE: With your students safety in mind, Your account must first be verified before you can sign in. This verification process can take up to 24-hours.</p>
+  {% elif account.account_type == 'parent' %}
+    <p>Sign in to update and manage your child(ren)'s NCI experience including food preferences, medications, and more.</p>
+    <a href="https://app.discovernci.org/login" style="width: 200px; text-align: center; text-decoration: none; border-radius: 4px; margin: 20px 0px; padding: 10px 20px; display: inline-block; white-space: nowrap; background: #16b55f; color: #fff; font-size: 110%;">Sign in</a>
+  {% endif %}
+
+{% endblock body %}

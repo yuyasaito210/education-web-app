@@ -1,0 +1,19 @@
+{% extends "base_email.html" %}
+
+{% block title %}Thank you for your Donation!{% endblock title %}
+
+{% block body %}
+
+  <p>Receipt ID: {{ receipt_id }}</p>
+
+  <p>
+    Thank you for your generous donation of ${{ amount }}.
+    Nature’s Classroom Institute and Montessori School is a not-for-profit organization that expands the educational scope of children beyond the classroom through an authentic Montessori education and a strong outdoors program.
+    We provide a tangible experience that encourages the growth of local children through academics, the environment, and community awareness to achieve a holistic educational experience.
+  </p>
+  <p>
+    We greatly appreciate your support to further our mission to develop self-motivated, responsible, compassionate, independent problem solvers, who sustain a lifelong love of learning through an experiential education based in and around the natural world.
+    For your tax purposes, we are a 501(c)(3) charity and our tax ID number is 46-4732782.
+  </p>
+
+{% endblock body %}

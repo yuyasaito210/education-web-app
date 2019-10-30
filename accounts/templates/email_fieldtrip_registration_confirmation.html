@@ -1,0 +1,20 @@
+{% extends "base_email.html" %}
+
+{% block title %}NCI Field Trip Confirmation{% endblock title %}
+
+{% block body %}
+
+  <p>Hello, {{ account.name }}</p>
+
+  <p><strong>{{ student.name }}</strong> has been registered to attend a field trip to Nature's Classroom Institute.</p>
+
+  <ul>
+    <li><strong>Name</strong>: {{ student.name }}</li>
+    <li><strong>School</strong>: {{ school.name }}</li>
+    <li><strong>Classroom</strong>: {{ student.get_classroom_display }}</li>
+    <li><strong>Field Trip</strong>: {{ fieldtrip.name }}</li>
+    <li><strong>Start Date</strong>: {{ fieldtrip.start_date }}</li>
+    <li><strong>End Date</strong>: {{ fieldtrip.end_date }}</li>
+  </ul>
+  
+{% endblock body %}

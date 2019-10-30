@@ -1,0 +1,23 @@
+{% extends "base_email.html" %}
+
+{% block title %}New NCI Teacher Account{% endblock title %}
+
+{% block body %}
+
+  <p>{{ account.name }}, a Teacher from {{ school.name }} has just created an account on discovernci.org. If this seems right to you, you must approve their account. They will not be able to sign in until you do. If this looks suspicious you can either safely ignore this request{% if shcool.phone %} or follow up with the school by reaching them at {{ shcool.phone }}{% endif %}.</p>
+
+  <ul>
+    <li> {{ school.name }} </li>
+    <li> <strong>{{ account.name }}</strong> </li>
+    <li> {{ account.email }} </li>
+    {% if phone %}
+      <li> {{ account.phone }} </li>
+    {% endif %}
+  </ul>
+
+  <a href="https://app.discovernci.org/approve/{{ account.guid}}/{{school.guid}}" style="width: 200px; text-align: center; text-decoration: none; border-radius: 4px; margin: 20px 0px; padding: 10px 20px; display: inline-block; white-space: nowrap; background: #16b55f; color: #fff; font-size: 110%;">Approve Teacher</a>
+
+  <p>If you have admin access you can adjust this accounts details at:
+      <br />https://app.discovernci.org/a/accounts/accountprofile/{{ account.id }}/change/</p>
+
+{% endblock body %}

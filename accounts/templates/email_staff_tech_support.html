@@ -1,0 +1,18 @@
+{% extends "base_email.html" %}
+
+{% block title %}Technical Support Message{% endblock title %}
+
+{% block body %}
+
+  <p>We just received a technical support inquiry from the following {{ account.account_type }}:</p>
+
+  <ul>
+    <li><strong>Name</strong>: {{ account.name }}</li>
+    <li><strong>Email</strong>: {{ account.email }}</li>
+    <li><strong>Message</strong>: </li> {{ message }}
+  </ul>
+
+  <p>You can access {{ account.name }}'s account settings by going to
+    <br />https://app.discovernci.org/a/accounts/accountprofile/{{ account.id }}/change/</p>
+    
+{% endblock body %}

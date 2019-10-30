@@ -1,0 +1,19 @@
+{% extends "base_email.html" %}
+
+{% block title %}Field Trip Request{% endblock title %}
+
+{% block body %}
+
+  <p>{{ account.name }}, a Teacher from {{ school.name }} has just requested an NCI Field Trip booking. Please reach out to them via {{ contact_method }} as soon as possible.</p>
+
+  <ul>
+    <li>Name: <strong>{{ account.name }}</strong></li>
+    <li>Email: {{ account.email }}</li>
+    <li>Phone: {% if phone %}{{ account.phone }}{% else %}No phone number on-file{% endif %}</li>
+    <li>Date Joined: {{ account.date_joined }}</li>
+  </ul>
+
+  <p>If you have admin access you can adjust this accounts details at:
+      <br />https://discovernci.org/a/accounts/accountprofile/{{ account.id }}/change/</p>
+
+{% endblock body %}

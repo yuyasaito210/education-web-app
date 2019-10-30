@@ -1,0 +1,23 @@
+{% extends "base_email.html" %}
+
+{% block title %}New NCI Teacher Account{% endblock title %}
+
+{% block body %}
+
+  <p>{{ account.name }}, a Teacher from {{ school.name }} has just created an account on discovernci.org. Their email address ({{ account.email }}) was listed in {{ school.name }}'s email whitelist and so their account was automatically activated. There is no action necessary, this is just a heads-up that they created their account.</p>
+
+  <ul>
+    <li>Name: <strong>{{ account.name }}</strong></li>
+    <li>Email: {{ account.email }}</li>
+    {% if phone %}<li>Phone: {{ account.phone }}</li>{% endif %}
+    <li>Date Joined: {{ account.date_joined }}</li>
+    <li>School: <strong>{{ school.name }}</strong></li>
+  </ul>
+
+  <p>If you have admin access you can adjust this accounts details at:
+      <br />https://app.discovernci.org/a/accounts/accountprofile/{{ account.id }}/change/.</p>
+
+  <p>You can review {{ school.name }}'s settings, including their email whitelist at:
+      <br />https://app.discovernci.org/a/accounts/school/{{ school.id }}/change/</p>
+      
+{% endblock body %}

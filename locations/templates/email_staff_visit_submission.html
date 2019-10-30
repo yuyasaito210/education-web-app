@@ -1,0 +1,14 @@
+{% extends "base_email.html" %}
+
+{% block title %}New Visit Submission{% endblock title %}
+
+{% block body %}
+  <ul>
+    <li>Preferred Time: {{ preferred_time }}</li>
+    <li>Location: {{ location }}</li>
+    <li>Name: {{ personal_name }}</li>
+    <li>Email: {{ email }}</li>
+    <li>Phone: {{ phone }}</li>
+    <li>Comments: {{ comments }}</li>
+  </ul>
+{% endblock body %}

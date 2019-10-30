@@ -1,0 +1,19 @@
+{% extends "base_email.html" %}
+
+{% block title %}Duplicate Student Record Attempt{% endblock title %}
+
+{% block body %}
+
+  <p>{{ user }} just tried adding a Student with a name and birthdate matching a record already on-file. Please contact them to sort out any possible confusion.</p>
+
+  <ul>
+    <li>{{ existing_record.name }}</li>
+    <li>{{ existing_record.dob }}</li>
+    <li>{{ existing_record.current_school }}</li>
+  </ul>
+
+  <p>
+    <a href="https://app.discovernci.org/app/student/{{existing_record.id}}">View existing student record</a> for further contact details.
+  </p>
+
+{% endblock body %}
