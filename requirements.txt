@@ -48,6 +48,6 @@ singledispatch==3.4.0.3
 six==1.11.0
 sympy==0.7.6.1
 typing==3.6.6
-urllib3==1.23
+urllib3==1.24.2
 usaddress==0.5.10
 validate-email==1.3
